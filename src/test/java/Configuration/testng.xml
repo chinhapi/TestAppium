@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="deviceName" value="GDR-Phone02"/>
+    <parameter name="platformVersion" value="5.1.1"/>
+
+    <!--<parameter name="deviceName" value="Google"/>-->
+    <!--<parameter name="platformVersion" value="6.0"/>-->
+
+    <!--<parameter name="deviceName" value="GDR-Phone06"/>-->
+    <!--<parameter name="platformVersion" value="5.1.1"/>-->
+
+    <parameter name="platformName" value="Android"/>
+    <parameter name="appPackage" value="com.globedr.app"/>
+    <parameter name="appActivity" value="com.globedr.app.SplashScreenActivity"/>
+    <parameter name="ulr" value="http://127.0.0.1:4723/wd/hub"/>
+    <test name="Test">
+        <classes>
+            <class name="Modules.Md_LTC"/>
+            <!--<class name="Modules.Md_Consult"/>-->
+        </classes>
+    </test>
+</suite>
